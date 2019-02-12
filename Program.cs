@@ -1,6 +1,6 @@
 using System;
 
-namespace Trangles
+namespace TriangleTracker
 {
   class Program
   {
@@ -15,9 +15,9 @@ namespace Trangles
       Console.WriteLine("length of the 3rd side:");
       int thirdSide = int.Parse(Console.ReadLine());
 
-      Traingle inputTriangle = new Triangle(firstSide, secondSide, thirdSide);
+      Triangle inputTriangle = new Triangle(firstSide, secondSide, thirdSide);
 
-      inputTriangle.GetType();
+     Console.WriteLine(inputTriangle.GetTriangleType());
 
     }
   }

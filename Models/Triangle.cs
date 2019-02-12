@@ -8,16 +8,16 @@ namespace TriangleTracker
     private int SecondSide;
     private int ThirdSide;
 
-    public Traingle (firstSide, secondSide, thirdSide)
+    public Triangle(int firstSide, int secondSide, int thirdSide)
     {
       FirstSide = firstSide;
       SecondSide = secondSide;
       ThirdSide = thirdSide;
     }
 
-    public string GetType()
+    public string GetTriangleType()
     {
-      if ((FirstSide + SecondSide < ThirdSide) || (SecondSide + ThirdSide < FirstSide) || (FirstSide + ThirdSide < SecondSide))
+      if ((FirstSide + SecondSide <= ThirdSide) || (SecondSide + ThirdSide <= FirstSide) || (FirstSide + ThirdSide <= SecondSide))
       {
         return "It's not a triangle";
       }
